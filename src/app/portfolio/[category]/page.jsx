@@ -1,4 +1,6 @@
+import Button from '@/components/Button/Button';
 import styles from './page.module.css';
+import Image from 'next/image';
 
 const Category = ({params}) => {
   return (
@@ -6,7 +8,12 @@ const Category = ({params}) => {
       <h1 className={styles.catTitle}>{params.category}</h1>
       <div className={styles.item}>
         <div className={styles.content}>
-          
+          <h1 className={styles.title}>Test</h1>
+          <p className={styles.desc}>Desc</p>
+          <Button text="See more" url="#" />
+        </div>
+        <div className={styles.imgContainer}>
+          <Image src="" alt="Picture" fill={true} className={styles.img}/>
         </div>
       </div>
     </div>
